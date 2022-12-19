@@ -1,8 +1,8 @@
 package presenter
 
 import (
-	"github.com/gsabadini/go-bank-transfer/domain"
-	"github.com/gsabadini/go-bank-transfer/usecase"
+	"github.com/ducdang91/go-bank-transfer/domain"
+	"github.com/ducdang91/go-bank-transfer/usecase"
 	"reflect"
 	"testing"
 )

@@ -1,4 +1,4 @@
-module github.com/gsabadini/go-bank-transfer
+module github.com/ducdang91/go-bank-transfer
 
 go 1.16
 

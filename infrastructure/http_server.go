@@ -4,13 +4,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gsabadini/go-bank-transfer/adapter/logger"
-	"github.com/gsabadini/go-bank-transfer/adapter/repository"
-	"github.com/gsabadini/go-bank-transfer/adapter/validator"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/database"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/log"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/router"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/validation"
+	"github.com/ducdang91/go-bank-transfer/adapter/logger"
+	"github.com/ducdang91/go-bank-transfer/adapter/repository"
+	"github.com/ducdang91/go-bank-transfer/adapter/validator"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/database"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/log"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/router"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/validation"
 )
 
 type config struct {

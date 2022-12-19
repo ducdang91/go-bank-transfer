@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gsabadini/go-bank-transfer/domain"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/log"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/validation"
-	"github.com/gsabadini/go-bank-transfer/usecase"
+	"github.com/ducdang91/go-bank-transfer/domain"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/log"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/validation"
+	"github.com/ducdang91/go-bank-transfer/usecase"
 )
 
 type mockCreateTransfer struct {

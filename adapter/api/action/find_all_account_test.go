@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gsabadini/go-bank-transfer/infrastructure/log"
-	"github.com/gsabadini/go-bank-transfer/usecase"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/log"
+	"github.com/ducdang91/go-bank-transfer/usecase"
 )
 
 type mockFindAllAccount struct {

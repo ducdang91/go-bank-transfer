@@ -1,7 +1,7 @@
 package logging
 
 import (
-	"github.com/gsabadini/go-bank-transfer/adapter/logger"
+	"github.com/ducdang91/go-bank-transfer/adapter/logger"
 )
 
 type Info struct {

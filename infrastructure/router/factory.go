@@ -2,11 +2,11 @@ package router
 
 import (
 	"errors"
-	"github.com/gsabadini/go-bank-transfer/adapter/repository"
+	"github.com/ducdang91/go-bank-transfer/adapter/repository"
 	"time"
 
-	"github.com/gsabadini/go-bank-transfer/adapter/logger"
-	"github.com/gsabadini/go-bank-transfer/adapter/validator"
+	"github.com/ducdang91/go-bank-transfer/adapter/logger"
+	"github.com/ducdang91/go-bank-transfer/adapter/validator"
 )
 
 type Server interface {

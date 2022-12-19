@@ -3,7 +3,7 @@ package validation
 import (
 	"errors"
 
-	"github.com/gsabadini/go-bank-transfer/adapter/validator"
+	"github.com/ducdang91/go-bank-transfer/adapter/validator"
 )
 
 var (

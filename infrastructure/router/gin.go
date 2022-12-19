@@ -9,13 +9,13 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/ducdang91/go-bank-transfer/adapter/api/action"
+	"github.com/ducdang91/go-bank-transfer/adapter/logger"
+	"github.com/ducdang91/go-bank-transfer/adapter/presenter"
+	"github.com/ducdang91/go-bank-transfer/adapter/repository"
+	"github.com/ducdang91/go-bank-transfer/adapter/validator"
+	"github.com/ducdang91/go-bank-transfer/usecase"
 	"github.com/gin-gonic/gin"
-	"github.com/gsabadini/go-bank-transfer/adapter/api/action"
-	"github.com/gsabadini/go-bank-transfer/adapter/logger"
-	"github.com/gsabadini/go-bank-transfer/adapter/presenter"
-	"github.com/gsabadini/go-bank-transfer/adapter/repository"
-	"github.com/gsabadini/go-bank-transfer/adapter/validator"
-	"github.com/gsabadini/go-bank-transfer/usecase"
 )
 
 type ginEngine struct {

@@ -7,24 +7,24 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gsabadini/go-bank-transfer/adapter/api/logging"
-	"github.com/gsabadini/go-bank-transfer/adapter/logger"
+	"github.com/ducdang91/go-bank-transfer/adapter/api/logging"
+	"github.com/ducdang91/go-bank-transfer/adapter/logger"
 
 	"github.com/pkg/errors"
 	"github.com/urfave/negroni"
 )
 
-//Logger armazena a estrutura de log para entrada e saídas da API
+// Logger armazena a estrutura de log para entrada e saídas da API
 type Logger struct {
 	log logger.Logger
 }
 
-//NewLoggerFactory constrói um Logger com suas dependências
+// NewLoggerFactory constrói um Logger com suas dependências
 func NewLogger(log logger.Logger) Logger {
 	return Logger{log: log}
 }
 
-//Execute cria logs de entrada e saída da API
+// Execute cria logs de entrada e saída da API
 func (l Logger) Execute(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 	start := time.Now()
 

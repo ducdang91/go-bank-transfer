@@ -4,11 +4,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/gsabadini/go-bank-transfer/infrastructure"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/database"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/log"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/router"
-	"github.com/gsabadini/go-bank-transfer/infrastructure/validation"
+	"github.com/ducdang91/go-bank-transfer/infrastructure"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/database"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/log"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/router"
+	"github.com/ducdang91/go-bank-transfer/infrastructure/validation"
 )
 
 func main() {
@@ -21,6 +21,7 @@ func main() {
 		DbNoSQL(database.InstanceMongoDB)
 
 	app.WebServerPort(os.Getenv("APP_PORT")).
-		WebServer(router.InstanceGorillaMux).
+		//WebServer(router.InstanceGorillaMux).
+		WebServer(router.InstanceGin).
 		Start()
 }

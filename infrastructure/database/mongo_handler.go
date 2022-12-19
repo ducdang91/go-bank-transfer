@@ -3,7 +3,7 @@ package database
 import (
 	"context"
 	"fmt"
-	"github.com/gsabadini/go-bank-transfer/adapter/repository"
+	"github.com/ducdang91/go-bank-transfer/adapter/repository"
 	"log"
 
 	"go.mongodb.org/mongo-driver/mongo"
@@ -20,11 +20,13 @@ func NewMongoHandler(c *config) (*mongoHandler, error) {
 	defer cancel()
 
 	uri := fmt.Sprintf(
-		"%s://%s:%s@mongodb-primary,mongodb-secondary,mongodb-arbiter/?replicaSet=replicaset",
-		c.host,
+		"mongodb://%s:%s@%s/%s?replicaSet=replicaset&&ssl=false&authSource=admin",
 		c.user,
 		c.password,
+		c.host,
+		c.database,
 	)
+	log.Println(uri)
 
 	clientOpts := options.Client().ApplyURI(uri)
 	client, err := mongo.Connect(ctx, clientOpts)
